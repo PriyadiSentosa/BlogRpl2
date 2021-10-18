@@ -26,3 +26,7 @@ Route::get('latihan-controller',
 
 
 Route::get('bio', [MyController::class, 'bio']);
+
+Route::get('barang', [MyController::class, 'barang']);
+
+Route::get('pesanan', [MyController::class, 'pesanan']);

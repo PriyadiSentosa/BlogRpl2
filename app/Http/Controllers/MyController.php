@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Biodata;
+use App\Models\Barang;
+use App\Models\Pesanan;
 
 
 class MyController extends Controller
@@ -25,7 +27,20 @@ class MyController extends Controller
 
     public function bio()
     {
+        // mengambil semua data dari biodata
         $bio = Biodata::all();
         return view('biodata', compact('bio'));
+    }
+
+    public function barang()
+    {
+        $barang = Barang::all();
+        return view('barang', compact('barang'));
+    }
+
+    public function pesanan()
+    {
+        $pesanan = Pesanan::all();
+        return view('pesanan', compact('pesanan'));
     }
 }
