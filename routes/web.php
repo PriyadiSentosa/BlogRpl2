@@ -30,3 +30,9 @@ Route::get('bio', [MyController::class, 'bio']);
 Route::get('barang', [MyController::class, 'barang']);
 
 Route::get('pesanan', [MyController::class, 'pesanan']);
+
+Route::get('pembelian', [MyController::class, 'pembelian']);
+
+Route::get('pembeli', [MyController::class, 'pembeli']);
+
+Route::get('suplier', [MyController::class, 'suplier']);

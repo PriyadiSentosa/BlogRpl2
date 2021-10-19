@@ -19,5 +19,8 @@ class DatabaseSeeder extends Seeder
         $this->call(BiodataSeeder::class);
         $this->call(BarangSeeder::class);
         $this->call(PesananSeeder::class);
+        $this->call(PembelianSeeder::class);
+        $this->call(PembeliSeeder::class);
+        $this->call(SuplierSeeder::class);
     }
 }

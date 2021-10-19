@@ -15,17 +15,12 @@ class PesananSeeder extends Seeder
     public function run()
     {
         $pesanan = [
-            ['nama_pelanggan'=>'Priyadi', 'nama_barang'=>'Honda CRF',
-            'qty'=>'200','tgl_pesan'=>'2021-27-10'],
-            ['nama_pelanggan'=>'Hadi', 'nama_barang'=>'Yamaha NMAX',
-            'qty'=>'210','tgl_pesan'=>'2021-28-10'],
-            ['nama_pelanggan'=>'Kidam', 'nama_barang'=>'Yamaha WR',
-            'qty'=>'250','tgl_pesan'=>'2021-29-10'],
-            ['nama_pelanggan'=>'Gilang', 'nama_barang'=>'Honda Vario',
-            'qty'=>'250','tgl_pesan'=>'2021-30-10'],
-            ['nama_pelanggan'=>'Jenal', 'nama_barang'=>'Honda Beat',
-            'qty'=>'260','tgl_pesan'=>'2021-11-11']
 
+            ['nama_pelanggan'=>'Hadi', 'nama_barang'=>'Yamaha NMAX','qty'=>'220', 'tgl_pesan'=>'2021-10-27'],
+            ['nama_pelanggan'=>'Kidam', 'nama_barang'=>'Yamaha WR','qty'=>'200','tgl_pesan'=>'2021-10-28'],
+            ['nama_pelanggan'=>'Gilang', 'nama_barang'=>'Honda Vario','qty'=>'230','tgl_pesan'=>'2021-10-29'],
+            ['nama_pelanggan'=>'Jenal', 'nama_barang'=>'Honda Beat','qty'=>'250','tgl_pesan'=>'2021-11-30'],
+            ['nama_pelanggan'=>'Priyadi', 'nama_barang'=>'Honda CRF','qty'=>'210','tgl_pesan'=>'2021-12-27']
 
         ];
         DB::table('pesanans')->insert($pesanan);
