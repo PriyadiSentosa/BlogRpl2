@@ -36,3 +36,13 @@ Route::get('pembelian', [MyController::class, 'pembelian']);
 Route::get('pembeli', [MyController::class, 'pembeli']);
 
 Route::get('suplier', [MyController::class, 'suplier']);
+
+Route::get('barang/{id}', [MyController::class, 'singleBarang']);
+
+Route::get('pembelian/{id}', [MyController::class, 'singlePembelian']);
+
+Route::get('pesanan/{id}', [MyController::class, 'singlePesanan']);
+
+Route::get('pembeli/{id}', [MyController::class, 'singlePembeli']);
+
+Route::get('suplier/{id}', [MyController::class, 'singleSuplier']);

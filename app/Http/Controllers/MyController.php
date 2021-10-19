@@ -64,4 +64,34 @@ class MyController extends Controller
         $suplier = Suplier::all();
         return view('suplier', compact('suplier'));
     }
+
+    public function singleBarang($id)
+    {
+        $barang = Barang::findOrFail($id);
+        return view('singleBarang', compact('barang'));
+    }
+
+    public function singlePembelian($id)
+    {
+        $pembelian = Pembelian::findOrFail($id);
+        return view('singlePembelian', compact('pembelian'));
+    }
+
+    public function singlePembeli($id)
+    {
+        $pembeli = Pembeli::findOrFail($id);
+        return view('singlePembeli', compact('pembeli'));
+    }
+
+    public function singleSuplier($id)
+    {
+        $suplier = Suplier::findOrFail($id);
+        return view('singleSuplier', compact('suplier'));
+    }
+
+    public function singlePesanan($id)
+    {
+        $pesanan = Pesanan::findOrFail($id);
+        return view('singlePesanan', compact('pesanan'));
+    }
 }

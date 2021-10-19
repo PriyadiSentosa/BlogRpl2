@@ -11,10 +11,11 @@
     @foreach ($pembeli as $data)
        Nama : {{$data->nama}} <br>
        Jenis Kelamin : {{$data->jns_kelamin}}<br>
-       Alamat : {{$data->alamat}}<br>
+       alamat : {{$data->alamat}}<br>
        Kode Pos  : {{$data->kode_pos}}<br>
        Kota  : {{$data->kota}}<br>
        Tanggal Lahir  : {{$data->tgl_lahir}}<hr>
+
     @endforeach
 </body>
 </html>
